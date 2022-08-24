@@ -1,0 +1,42 @@
+.TH TIMER 1 2022-08-24 0.1
+
+.SH NAME
+timer \- a minimal commandline timer
+
+.SH SYNOPSIS
+[\fB\-m\fR \fIminutes\fR]
+[\fB\-s\fR \fIseconds\fR]
+[\fB\-t\fR \fIminutes:seconds\fR]
+[\fB\-hv\fR]
+
+.SH DESCRIPTION
+.B timer
+is a minute and second based timer for commandline
+
+.SH OPTIONS
+.TP
+.BR \-m " " \fIminutes
+Number of minutes to count
+.TP
+.BR \-s " " \fIseconds
+number of seconds to count
+.TP
+.BR \-t " " \fIminutes:seconds
+timestring having higher priority than \fI\-m\fR and \fI\-s
+.TP
+.BR \-h
+show help information
+.TP
+.BR \-v
+show version number
+
+.SH EXAMPLES
+.SS 2 minutes timer
+timer -m 2
+.SS 30 seconds timer
+timer -s 30
+.SS 2 minutes 30 seconds timer
+timer -t 2:30
+
+.SH AUTHOR
+Sudeep Biswas <w3bdev@protonmail.com>
