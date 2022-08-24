@@ -1,6 +1,9 @@
 # timer
 A minimal commandline timer in C
 
+## Screencast
+![A screen cast showing timer](./timer.gif)
+
 ## Build
 
         make
