@@ -40,3 +40,17 @@ A minimal commandline timer in C
 ### 2 minutes 30 seconds timer
 
        timer -t 2:30
+
+### Issues to consider
+- [ ] Use standard header for boolean
+- [ ] Use block for `if`
+- [ ] Initialize every variable with value
+- [ ] Use `unisigned int` for min and sec
+- [ ] `timer -t :` segfaults
+- [ ] Either `-s -m` or `-t` flags
+- [ ] Make `clean` target `.PHONY`
+- [ ] Streamline multiple exits
+- [ ] Try to be platform independent (`unistd.h`)
+- [ ] Try to use safe versions of string functions
+- [ ] Write comparisons in the way that left side is constant.
+- [ ] const correctness on each function parameter and, if applicable, on variables
