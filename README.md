@@ -10,7 +10,7 @@ A minimal commandline timer in C
 
 ## Synopsis
     
-        timer [-m minutes] [-s seconds] [-t minutes:seconds] [-hv]
+        timer [[-m minutes] [-s seconds] | [-t minutes:seconds]] [-hv]
 
 ## Options
 
@@ -21,7 +21,7 @@ A minimal commandline timer in C
               number of seconds to count.
 
        -t minutes:seconds
-              timestring having higher priority than -m and -s.
+              timestring in minutes:seconds format
 
        -h     show help information
 
@@ -47,7 +47,7 @@ A minimal commandline timer in C
 - [x] Initialize every variable with value
 - [ ] Use `unisigned int` for min and sec
 - [ ] `timer -t :` segfaults
-- [ ] Either `-s -m` or `-t` flags
+- [x] Either `-s -m` or `-t` flags
 - [ ] Make `clean` target `.PHONY`
 - [ ] Streamline multiple exits
 - [ ] Try to be platform independent (`unistd.h`)

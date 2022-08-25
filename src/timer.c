@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 void print_help() {
-  printf("Usage: timer [-t minutes:seconds] | [-m minutes] [-s seconds]\n");
+  printf("Usage: timer [[-t minutes:seconds] | [-m minutes] [-s seconds]] [-hv]\n");
 }
 
 void print_version() { printf("Version 0.1\n"); }
@@ -92,6 +92,12 @@ int main(int argc, char *argv[]) {
   if (!tflag && !mflag && !sflag) {
     print_error("No valid options found. For help: timer -h\n");
     return 2;
+  }
+
+  if (tflag && (mflag || sflag)) {
+    print_error("-t timestring cannot be used together with -m or -s\n");
+    print_help();
+    return 5;
   }
 
   if (tflag) {

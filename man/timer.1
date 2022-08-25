@@ -5,9 +5,9 @@ timer \- a minimal commandline timer
 
 .SH SYNOPSIS
 .B timer
-[\fB\-m\fR \fIminutes\fR]
-[\fB\-s\fR \fIseconds\fR]
-[\fB\-t\fR \fIminutes:seconds\fR]
+[[\fB\-m\fR \fIminutes\fR]
+[\fB\-s\fR \fIseconds\fR] |
+[\fB\-t\fR \fIminutes:seconds\fR]]
 [\fB\-hv\fR]
 
 .SH DESCRIPTION
@@ -23,7 +23,7 @@ number of minutes to count
 number of seconds to count
 .TP
 .BR \-t " " \fIminutes:seconds
-timestring having higher priority than \fI\-m\fR and \fI\-s
+timestring in minutes:seconds format
 .TP
 .BR \-h
 show help information
