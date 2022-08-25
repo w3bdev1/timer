@@ -1,11 +1,8 @@
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-
-typedef char bool;
-#define true 1
-#define false 0
 
 void print_help() {
   printf("Usage: timer [-t minutes:seconds] | [-m minutes] [-s seconds]\n");

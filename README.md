@@ -42,7 +42,7 @@ A minimal commandline timer in C
        timer -t 2:30
 
 ### Issues to consider
-- [ ] Use standard header for boolean
+- [x] Use standard header for boolean
 - [ ] Use block for `if`
 - [ ] Initialize every variable with value
 - [ ] Use `unisigned int` for min and sec
