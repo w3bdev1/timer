@@ -48,7 +48,7 @@ A minimal commandline timer in C
 - [ ] Use `unisigned int` for min and sec
 - [ ] `timer -t :` segfaults
 - [x] Either `-s -m` or `-t` flags
-- [ ] Make `clean` target `.PHONY`
+- [x] Make `clean` target `.PHONY`
 - [ ] Streamline multiple exits
 - [ ] Try to be platform independent (`unistd.h`)
 - [ ] Try to use safe versions of string functions
