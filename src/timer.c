@@ -51,7 +51,7 @@ void parse_time(char *time, int *min, int *sec) {
 int main(int argc, char *argv[]) {
   int min = 0;
   int sec = 0;
-  char *time;
+  char *time = NULL;
   bool tflag = false;
   bool mflag = false;
   bool sflag = false;
