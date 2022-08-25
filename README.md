@@ -43,7 +43,7 @@ A minimal commandline timer in C
 
 ### Issues to consider
 - [x] Use standard header for boolean
-- [ ] Use block for `if`
+- [x] Use block for `if`
 - [ ] Initialize every variable with value
 - [ ] Use `unisigned int` for min and sec
 - [ ] `timer -t :` segfaults

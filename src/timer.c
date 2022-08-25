@@ -35,8 +35,9 @@ void start_timer(int min, int sec) {
 int count_chars(char *s, char ch) {
   int count = 0;
   while (*s != '\0') {
-    if (*s == ch)
+    if (*s == ch) {
       count++;
+    }
     s++;
   }
   return count;
